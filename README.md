@@ -170,3 +170,12 @@ user             pts/9                     Fri Apr  9 18:00:00 +0000 2021
 user2            pts/6                     Tue Apr  6 18:00:00 +0000 2021
 attacker         pts/8                     Thu Apr  8 18:00:00 +0000 2021
 ```
+
+### Test it with docker
++ Test script provided.
+  + ```./test.sh <options>```
++ Fix ./test/test.exp to customize initial login logs.
+
+```
+./test.sh -R attacker user -t pts/10 supertty -d 041021 040221
+```

@@ -1,7 +1,6 @@
 #include "zap_tmp.h"
 
 int compare(const void* a, const void* b) {
-    printf("%d ", (*(utmp_t**)a)->ut_time);
     if ((*(utmp_t**)a)->ut_time > (*(utmp_t**)b)->ut_time) return 1;
     else if ((*(utmp_t**)a)->ut_time < (*(utmp_t**)b)->ut_time) return -1;
     else return 0;

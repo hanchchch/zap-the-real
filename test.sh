@@ -14,7 +14,7 @@ docker exec -i `docker ps | grep zap | awk '{ print $1 }'` ./zap $@
 echo "------------------------------------------------------------"
 echo "[ last after ]"
 docker exec -i `docker ps | grep zap | awk '{ print $1 }'` last
-echo "[ lastlog before ]"
+echo "[ lastlog after ]"
 docker exec -i `docker ps | grep zap | awk '{ print $1 }'` lastlog
 echo "------------------------------------------------------------"
 echo "[ chkwtmp ]"

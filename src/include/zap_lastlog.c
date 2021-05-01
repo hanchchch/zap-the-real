@@ -42,6 +42,7 @@ lastlog_t* modified_lastlog(lastlog_t* ll, utmp_t* latest) {
         return NULL;
     else {
         strcpy(ll->ll_line, latest->ut_line);
+        strcpy(ll->ll_host, latest->ut_host);
         ll->ll_time = latest->ut_time;
         return ll;
     }
